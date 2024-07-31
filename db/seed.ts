@@ -1,14 +1,13 @@
+import { db } from './index';
 import { config } from "dotenv";
 import postgres from "postgres";
-import { drizzle } from "drizzle-orm/postgres-js";
 import {
   InsertPost,
   jobPostingsTable,
-  SelectPost,
   requirementsTable,
   rolesTable,
   InsertRequirement,
-  InsertRole,
+  InsertRole
 } from "./schema";
 import data from "@/starter-code/data.json";
 
@@ -20,7 +19,6 @@ if (!process.env.DATABASE_URL) {
 const client = postgres(process.env.DATABASE_URL!, {
   max: 1,
 });
-const db = drizzle(client);
 
 async function main() {
   try {
