@@ -3,7 +3,7 @@ import { config } from "dotenv";
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
 
-config({ path: ".env" });
+config({ path: ".env.local" });
 
 async function main() {
   const migrationClient = postgres(process.env.DATABASE_URL!, {

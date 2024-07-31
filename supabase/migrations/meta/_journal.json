@@ -8,6 +8,13 @@
       "when": 1721745444440,
       "tag": "0000_round_the_phantom",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1722433041947,
+      "tag": "0001_thankful_whistler",
+      "breakpoints": true
     }
   ]
 }
